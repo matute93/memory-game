@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    background: wheat;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 20px auto;
+  }
+ 
+  .card {
+    width: 200px;
+    height: 150px;
+  
+  }
+  img {
+      width: 200px;
+      height: 150px;
+      border-radius: 5px;
+ 
+      
+  }
+  
