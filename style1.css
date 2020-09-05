@@ -8,26 +8,31 @@
     display: flex;
     background: wheat;
   }
-
+.top{
+  display: flex;
+  flex-direction: column;
+}
   .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    margin: 20px auto;
+    margin: auto;
   }
  
   .card {
     width: 200px;
     height: 150px;
+  }
   
+  .card.flip{
+    transform: rotateY(180deg);
+    transition: transform 1s;
   }
   img {
       width: 200px;
       height: 150px;
       border-radius: 5px;
- 
-      
   }
   
